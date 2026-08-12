@@ -1,0 +1,31 @@
+# WSL2 Global Configuration for Antigravity IDE Multi-Task Workloads
+# Location: %USERPROFILE%\.wslconfig
+
+[wsl2]
+# RAM allocation (Optimized for multi-agent workloads & heavy tasks)
+memory=20GB
+
+# CPU Core count allocation
+processors=12
+
+# Swap space safety net
+swap=8GB
+
+# Modern Mirrored networking stack for smooth host <-> guest localhost sharing
+networkingMode=mirrored
+
+# Enable DNS tunneling through Windows Host
+dnsTunneling=true
+
+# Pass Windows proxy settings automatically
+autoProxy=true
+
+# Integration with Windows Firewall
+firewall=true
+
+[experimental]
+# Gradual memory reclaim back to Windows host when idle
+autoMemoryReclaim=gradual
+
+# Dynamic disk size (VHD expands on demand)
+sparseVhd=true

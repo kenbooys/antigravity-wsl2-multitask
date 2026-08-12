@@ -1,0 +1,21 @@
+{
+  "antigravity.environment": "wsl2",
+  "antigravity.multitask": {
+    "enabled": true,
+    "maxConcurrentSubagents": 5,
+    "maxConcurrentBackgroundTasks": 10,
+    "backgroundTaskPollIntervalMs": 30000,
+    "workspaceIsolationMode": "branch",
+    "wslInteropTimeoutMs": 15000
+  },
+  "antigravity.wsl": {
+    "distro": "Ubuntu",
+    "useMirroredNetworking": true,
+    "enablePlan9CacheOptimization": true,
+    "enableSystemdIntegration": true
+  },
+  "antigravity.telemetry": {
+    "pidMonitoring": true,
+    "trackMemoryUsage": true
+  }
+}
